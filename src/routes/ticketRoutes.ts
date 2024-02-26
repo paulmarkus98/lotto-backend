@@ -3,8 +3,9 @@ import TicketController from '../controllers/ticketController';
 
 const router: Router = Router();
 
-router.post('/tickets', TicketController.createTicket);
-// router.get('/tickets/:id', TicketController.getTicketById);
-// router.get('/tickets', TicketController.getAllTickets);
+router.post('/ticket', TicketController.createTicket);
+router.get('/tickets', TicketController.getAllTickets);
+router.get('/ticket/:id', TicketController.getTicketById);
+router.get('/frequency', TicketController.getFrequency);
 
 export default router;
